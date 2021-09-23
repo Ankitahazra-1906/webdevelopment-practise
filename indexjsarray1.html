@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        const friends=["joey","phoebe","chandler"];
+        document.getElementById("demo").innerHTML=friends;
+        friends.push("monica");
+        document.getElementById("demo1").innerHTML=friends;
+        document.getElementById("demo2").innerHTML=friends.length;
+        document.getElementById("demo3").innerHTML=Array.isArray(friends);
+    </script>
+</body>
+</html>

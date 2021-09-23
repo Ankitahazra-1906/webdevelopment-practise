@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    
+    <script>
+        const fruits=["mango","aapple","pineapple"];
+        document.getElementById("demo").innerHTML=fruits;
+        document.getElementById("demo1").innerHTML=fruits[0];
+        fruits[1]="cherry";
+        document.getElementById("demo2").innerHTML=fruits;
+        document.getElementById("demo3").innerHTML=fruits[fruits.length-2];
+        
+        let x=fruits.length;
+        let text="<ol>";
+        for(let i=0;i<x;i++){
+            text+="<li>"+fruits[i]+"</li>";
+        }
+        text+="</ol>"
+        document.getElementById("demo4").innerHTML=text;
+        
+
+    </script>
+    
+</body>
+</html>
